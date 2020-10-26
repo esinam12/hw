@@ -1,0 +1,14 @@
+.rectangle {
+    width:600px;
+    margin-top: 100px;
+    height:200px;
+    border:1px solid #000;
+    background: white;
+    margin-left: 100px;
+    padding-left: 10px;
+    position: absolute;
+    
+
+    
+    
+}

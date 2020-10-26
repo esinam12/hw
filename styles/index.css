@@ -1,0 +1,30 @@
+
+body{
+    margin-bottom: 700px;
+}
+.navbar{
+    height: 10vh;
+}
+.background{
+    background-image: url(../images/background.jpg);
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+     background-position: center;
+   
+   
+}
+.name{
+    text-align:left;
+}
+.container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 10px;
+    font-weight: bolder;
+    color: white;
+}
+ 
