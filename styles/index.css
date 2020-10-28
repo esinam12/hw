@@ -1,54 +1,38 @@
-
-body{
-    margin-bottom: 700px;
-}
 .navbar{
     height: 10vh;
+    /* padding-bottom: 3px !important; */
 }
-.background{
-    background-image: url(../images/background.jpg);
-    height: 600px;
+body{
+    margin-bottom: 4000px;
+}
+.btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    /* padding: 14px 28px; Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    
+  }
+
+  .info {background-color: #2169F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.background {
+    background-image: url("/images/background.jpg");
+    height: 90%;
     width: 100%;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
-     background-position: center;
-   
-   
-}
-.name{
-    text-align:left;
-}
-.container {
+    background-size: cover;
+    position: absolute;
+  }
+  
+  .first-text {
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-left:5px;
-    font-weight: bolder;
     color: white;
-}
-.dropdown{
-    
-        overflow: hidden;
-        background-color: #333;
-        font-family: sans-serif;   
-      
-}
- 
-.rectangle {
-    width:600px;
-    margin-top: 100px;
-    height:200px;
-    border:1px solid #000;
-    background: white;
-    margin-left: 100px;
-    padding-left: 10px;
-    position: absolute;  
-}
-.topic{
-    font-size: 5px;
-    font-family:sans-serif;
-    padding-top: 10px;
     margin-left: 20px;
-    text-align: center;
-}
+    /* padding-right: 70%; */
+    width: 400px;
+  }
