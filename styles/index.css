@@ -1,38 +1,160 @@
-.navbar{
-    height: 10vh;
-    /* padding-bottom: 3px !important; */
-}
-body{
-    margin-bottom: 4000px;
-}
-.btn {
-    border: none; /* Remove borders */
-    color: white; /* Add a text color */
-    /* padding: 14px 28px; Add some padding */
-    cursor: pointer; /* Add a pointer cursor on mouse-over */
-    
-  }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
-  .info {background-color: #2169F3;} /* Blue */
-.info:hover {background: #0b7dda;}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  height: 10vh;
+  /* padding-bottom: 3px !important; */
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.btn {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  /* padding: 14px 28px; Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.info {
+  background-color: #2169f3;
+} /* Blue */
+.info:hover {
+  background: #0b7dda;
+}
 
 .background {
-    background-image: url("/images/background.jpg");
-    height: 90%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-  }
-  
-  .first-text {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    margin-left: 20px;
-    /* padding-right: 70%; */
-    width: 400px;
-  }
+  background-image: url("/images/background.jpg");
+  height: 90%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.first-text {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin-left: 20px;
+  /* padding-right: 70%; */
+  width: 80%;
+  font-size: bolder;
+}
+
+.features {
+  padding: 12px 10px 12px 0px;
+  display: flex;
+  margin: 0px 2px 0px 0px;
+  text-decoration: none;
+}
+.features li {
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.rectangle {
+  width: 500px;
+  height: 100px;
+  border: 1px solid white;
+  background-color: white;
+  margin-bottom: -50px 0px -50px;
+}
+
+.card1 {
+  width: 50%;
+}
+
+.header {
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header h1 {
+  color: white;
+  font-size: bolder;
+}
+
+.row1 {
+  width: 60%;
+}
+.control {
+  text-align: center;
+}
+.header2 {
+  text-align: center;
+}
+.card-image {
+}
+
+.item-card {
+  height: 250px;
+  background-image: linear-gradient(
+      rgba(39, 38, 38, 0.5),
+      rgba(39, 38, 38, 0.5)
+    ),
+    url("/images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item-card-2 {
+  height: 250px;
+  background-image: linear-gradient(
+      rgba(39, 38, 38, 0.5),
+      rgba(39, 38, 38, 0.5)
+    ),
+    url("/images/Apartments.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item-card-3 {
+  height: 250px;
+  background-image: linear-gradient(
+      rgba(39, 38, 38, 0.5),
+      rgba(39, 38, 38, 0.5)
+    ),
+    url("/images/src-hostel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.plus-image {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+.header-3 {
+  text-align: center;
+}
+
+.title {
+  display: none;
+  color: white;
+  margin-top: 10px;
+}
+
+.product-holder:hover .title {
+  display: block;
+  margin-top: 150px;
+}
+
