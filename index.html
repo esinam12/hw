@@ -1,249 +1,466 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <title>HouseHunt</title>
-  <link rel="stylesheet" href="./styles/index.css"
-</head>
-<body>
- 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand mr-auto" href="#"><img src="./images/logo.jpg" height="50" width="50"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
-      <ul class=" nav navbar-nav navbar-right">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Rentals
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Apartments</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Homestels</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Hostels</a>
-        </div>
-      </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Advertise</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            More
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">About</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Blogs</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Students Guide</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><img src="./images/User-profile.png" height="15px" width="15px"> Sign In</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><button class="btn info">Add Property</button>
-          </a>
-        </li>
-        </ul>
-        </div>
-        </div>
-        </nav>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <div class="jumbotron jumbotron-fluid header">
-          <div class="container ">
-            <h1 class="">DISCOVER APARTMENTS<br>YOU'LL LOVE</h1>
-            <div class="row row1 pt-5 pb-2">
-              <div class="col-3">
-                <a class="nav-link ml-3" href="#"><img class="mr-1" src="./images/student.png" height="20px" width="20px">Student</a>
-              </div>
-              <div class="col-3">
-                <a class="nav-link ml-3" href="#"><img class="mr-1" src="./images/worker.png" height="20px" width="20px">Workers</a>
-              </div>
-              <div class="col-6">
-                <a class="nav-link ml-3" href="#"><img class="mr-1" src="./images/international.png" height="20px" width="20px">International Students</a>
-              </div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <title>HouseHunt</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand mr-auto" href="#"><img src="./images/House Hunt Logo Main.svg" height="200" width="200" ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse justify-content-end mt-3" id="navbarResponsive ">
+          <ul class=" nav navbar-nav navbar-right ">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Rentals
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Apartments</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Homestels</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Hostels</a>
             </div>
-            <div class="card w-50 mt-2 pt-1">
-              <div class="card-body pt-1">
-               <div class="row pt-1">
-                  <div class="col-6 pt-1">
-                    <div class="form-group pt-1">
-                      <label for="exampleFormControlSelect1">Where are you going to?</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Accra</option>
-                        <option>Kumasi</option>
-                        <option>Ho</option>
-                        <option>Takoradai</option>
-                        <option>Tamale</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-6 pt-1">
-                    <div class="form-group pt-1">
-                      <label for="exampleFormControlSelect1">All categories</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Apartment</option>
-                        
-                        <option>House</option>
-                        
-                        <option>Room</option>
-                        
-                        <option>Hostels</option>
-                        
-                        <option>Homestels</option>
-                      </select>
-                    </div>
-                  </div>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Advertise</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">About</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Blogs</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Students Guide</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="./images/User-profile.png" height="15px" width="15px"> Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=><button type="button" class="btn" style="background-color: #062fd4; color: white; margin-top: -7px;">Add Property</button></a>
+            </li>
+               
+            </ul>
+            </div>
+            </div>
+            </nav>
 
-                  <div class="col-6">
-                    <div class="">
-                      <b>¢ 10</b> <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/> <b>¢ 1000</b>
-
+            <div class="jumbotron jumbotron-fluid header">
+                <div class="container mt-5 ">
+                  <h1 class="">DISCOVER APARTMENTS<br>YOU WILL LOVE</h1>
+                  <div class="card w-55 mt-2 pt-1 ml-auto mr-auto" >
+                    <div class="card-body pt-5">
+                     <div class="row pt-1" >
+                        <div class="col-3 pt-1">
+                          <div class="form-group pt-1">
+                            <label for="exampleFormControlSelect1">Where are you going to?</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Accra</option>
+                              <option>Kumasi</option>
+                              <option>Ho</option>
+                              <option>Takoradai</option>
+                              <option>Tamale</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-3 pt-1">
+                          <div class="form-group pt-1">
+                            <label for="exampleFormControlSelect1">All categories</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Apartment</option>
+                              
+                              <option>House</option>
+                              
+                              <option>Room</option>
+                              
+                              <option>Hostels</option>
+                              
+                              <option>Homestels</option>
+                            </select>
+                          </div>
+                        </div>
+      
+                        <div class="col-3">
+                          <div class="">
+                            <div class="d-flex justify-content-center my-4">
+                              <span class="font-weight-bold indigo-text ">¢0</span>
+                              <form class="range-field w-25">
+                                <input class="border-0" type="range" min="0" max="100" />
+                              </form>
+                              <span class="font-weight-bold indigo-text ml-5 pl-4">¢5000</span>
+                            </div>
+      
+                          </div>
+      
+                        </div>
+                        <div class="col-6 d-flex justify-content-center">
+                        <div class="btn text-center"
+                          <button type="button" class="btn pl-4 pr-4" style="background-color: #062fd4; color: white">Search</button>
+                        </div>
+                        </div>
+                        
+                      </div>
                     </div>
-
-                  </div>
-                  <div class="col-6">
-                  <div class="btn">
-                    <button type="button" class="btn btn-primary pr-4"><img style="margin-right: 10px !important;" src="./images/loupe.png" height="15px" width="15px">Search</button>
-                  </div>
                   </div>
                   
                 </div>
               </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="Next page">
-        <div class="header2">
-          <h1>We have the most listing and <br/>constant update so you'll never miss out</h1><hr style="height:1px;border-width:0;color:blue;background-color:blue;width:50%"/>
-
-              
-          <!-- <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top w-100" src="./images/bg.jpg" alt="Card image cap">
-              
-              <div class="card-body">
-               
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="./images/Apartments.jpg" alt="Card image cap">
-            
-              <div class="card-body">
-                
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="./images/src-hostel.jpg" alt="Card image cap">
-              <div class="card-img-overlay">
-              <div class="card-body">
-              </div> 
-              </div>
-            </div>
-          </div> -->
-
-         <div class="container  mb-5 pb-5">
-          <div class="row">
-            <div class="col-4">
-              <div class="card height item-card">
-              <div class="product-holder">
-                <a href="#"><img src="./images/living-room 1roooms.svg"width="50px" height="50px" class='plus-image'></a>
-                <h4 class="title">Rooms</h4>
-              </div>
-            </div>
-            </div>
-            <div class="col-4">
-              <div class="card height item-card-2">
-                <div class="product-holder">
-                  <a href="#"><img src="./images/apartment vectorapar.svg"width="50px" height="50px" class='plus-image'></a>
-                  <h4 class="title">Apartment</h4>
-                </div>
-                
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card height item-card-3">
-                <div class="product-holder">
-                <a href="#"><img src="./images/home 1house.svg"width="50px" height="50px" class='plus-image'></a>
-                <h4 class="title">House</h4>
-              </div>
-            </div>
-          </div>
-         </div>
-        </div>
-          
-        </div>
-
-      </div>
-       
-      <div class="third-page">
-        <div class="header-3">
-          <h3>Trending rooms in your area</h3>
-        </div>
-      </div>
-
-     
-      <div class="container mb-5 pb-5">
-      <div class="card-deck">
-        <div class="card">
-          <img class="card-img-top" src="./images/Williams inn.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted"></small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="./images/kukus court.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text"></p>
-            <p class="card-text"><small class="text-muted"></small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="./images/Imperial court.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text"><img src="./images/Group 136properties.svg" width="100px"</p>
-            <p class="card-text"><small class="text-muted"></small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-      
+              <div class="Next page">
+                <div class="header2">
+                  <h3>We have the most listing and <br/>constant update so you'll never miss out</h3><hr style="height:1px;border-width:0;color:#7579e7;background-color:blue;width:50%"/>
         
+                 <div class="container  mb-5 pb-5">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="card height item-card">
+                      <div class="product-holder">
+                        <a href="#"><img src="./images/living-room 1roooms.svg"width="50px" height="50px" class='plus-image'></a>
+                         <h4 class="title">Rooms</h4>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card height item-card-2">
+                        <div class="product-holder">
+                          <a href="#"><img src="./images/apartment vectorapar.svg"width="50px" height="50px" class='plus-image'></a>
+                          <h4 class="title">Apartment</h4>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card height item-card-3">
+                        <div class="product-holder">
+                        <a href="#"><img src="./images/home 1house.svg"width="50px" height="50px" class='plus-image'></a>
+                        <h4 class="title">House</h4>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                </div>
+                  
+                </div>
+        
+              </div>
 
+              <div class="third-page container">
+                <div class="header-3">
+                  <h3>Trending rooms in your area</h3>
+                </div>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/kukus court.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <p class="card-text text-center mb-5"><img style="width: 70%;" class="img-fluid" src="./images/Group 155features.svg"></p>
+                          <p class="card-text"></p>
+                          <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img class="card-img-top" src="./images/hausphotomedia-com-02iWOgPEbU8-unsplash.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <p class="card-text text-center mb-5"><img style="width: 70%;" class="img-fluid"src="./images/Group 155features.svg"></p>
+                          <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img class="card-img-top" src="./images/Imperial court.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <p class="card-text text-center mb-5"><img style="width: 70%;" class="img-fluid" src="./images/Group 155features.svg"></p>
+                          <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                      </div>
+                </div>
+                <div class="card-deck mb-5 pb-5 mt-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./images/kukus court.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text text-center mb-5"><img style="width: 70%;" class="img-fluid" src="./images/Group 155features.svg"></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="./images/hausphotomedia-com-02iWOgPEbU8-unsplash.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text text-center mb-5"><img style="width: 70%;" class="img-fluid"src="./images/Group 155features.svg"></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="./images/Imperial court.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text text-center mb-5"><img style="width: 70%;" class="img-fluid" src="./images/Group 155features.svg"></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <!-- <hr  class="mb-5"> -->
+              <div class="fourth-page container-fluid mt-5 pb-5 pt-5" style="background-color:#f0f0f0;">
+                <div class="header-4 container " >
+                  <h2 class="text-center mb-5">Testimonials</h2>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="card mb-5">
+                              <div class="card-body">
+                                <h5 class="card-title">Daniel Bennin</h5>
+                                <p class="card-text">Really helpful! I could not be more grateful for the service they provide! My Student Support Specialist was so very helpful.</p>
+                               
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title">Baaba Simpson</h5>
+                                <p class="card-text">HouseHunt has been of a great help. They know their properties well and suggested me exactly what I was looking for.</p>
+                               
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title">Etornam Bright</h5>
+                                <p class="card-text">Stupendous platform! Going to a different Region is already a cumbersome task. But they eased the pain regarding renting.</p>
+                               
+                              </div>
+                            </div>
+                      
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+            <div class="container">
+            <div class="card-deck mt-5">
+              <div class="card" style="border: none;">
+                <div class="card-body">
+                  <h5 class="card-title">How it works?</h5>
+                  <p class="card-text">Find furnished rooms for rent and off campus housing options near more than 5,000 places and universities.</p>
+                
+                </div>
+              </div>
+              <div class="card" style="border-color: #062fd4;" >
+                <img class="card-img-top mt-3" src="./images/Groupsearch.svg" alt="Card image cap" height="50" width="50">
+                <div class="card-body">
+                  <h5 class="card-title text-center ">Search</h5>
+                  <p class="card-text text-center mb-3">You can easily search for hundreds of listings around your school, metro station and city.</p>
+                  <p class="card-text text-center mb-3"><button type="button" class="btn btn-outline-primary">Search now</button><small class="text-muted"></small></p>
+                </div>
+              </div>
+              <div class="card" style="border-color: #062fd4;" >
+                <img class="card-img-top mt-3" src="./images/Vectormatch.svg" alt="Card image cap" height="40" width="40">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Match</h5>
+                  <p class="card-text text-center">Review the listings and profiles of the hosts or guests and match based on your housing needs.</p>
+                  <p class="card-text text-center"><button type="button" class="btn btn-outline-primary">Explore now</button><small class="text-muted"></small></p>
+                </div>
+              </div>
+              <div class="card" style="border-color: #062fd4;" >
+                <img class="card-img-top mt-3" src="./images/calendar 1movein.svg" alt="Card image cap" height="40" width="40">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Move In</h5>
+                  <p class="card-text text-center ">Once the booking is approved you can simply move in to your new home.</p>
+                  <p class="card-text text-center"><button type="button" class="btn btn-outline-primary mt-3">Request now</button><small class="text-muted"></small></p>
+                </div>
+              </div>
+            </div>
+            </div>
 
+            <div class="container pt-5 mt-5">
+                <div class="row">
+          
+                    <div class="col-sm-6 text-center" >
+                     <h3>HouseHunt got your back!</h3>
+                     <br/>
+                     <h5>Renting has never been <br/>
+                      made easier than now.<br/>
+                      Find hot properties while <br/>
+                      saving hundreds in your<br/>
+                      next home search.</h5> 
+      
+                      <p>Click below and let<br/> us tell you how!!!</p>
+      
+                      <a class="btn btn-primary" href="#" role="button">Learn More</a>
+                      
+                    
+                    
+                  </div>
+                  <div class="col-sm-6 text-center">
+              
+                      <img src="./images/bg im.jpg" height="300" width="200" >
+   
+                      
+                  </div>
+                </div>
+                  </div>
 
+                  <!-- Footer -->
 
+        <!-- Grid column -->
 
+        <!-- Grid column -->
+        
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
 
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
 
-  
+        </div>
+        <!-- Grid column -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="./main.js"></script>
-  <script>
-    $("#ex2").slider({});
-  </script>
-</body>
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold"><img src="./images/House Hunt Logo Main.svg"></h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p></p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Products</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="#!">About</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Blog</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Terms of service</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">For schools</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="#!">Contacts</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Help</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Privacy policy</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">For Landlord</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold ml-2">Contact</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i>Accra, AC 10012, GH</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i>househunt520@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i>+ 233 241 86 85 04</p>
+        <p>
+          <i class="fas fa-print mr-3"></i>+ 01 234 567 89</p>
+          
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+    <a class="dark-grey-text" href="https://mdbootstrap.com/"> HouseHunt.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+       
+
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>

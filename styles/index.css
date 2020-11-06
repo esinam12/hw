@@ -8,25 +8,25 @@ body {
   /* padding-bottom: 3px !important; */
 }
 
-.nav-link {
+/* .nav-link {
   padding: 0;
 }
 
 .btn {
   border: none; /* Remove borders */
-  color: white; /* Add a text color */
-  /* padding: 14px 28px; Add some padding */
+/* color: white; /* Add a text color */
+/* padding: 14px 28px; Add some padding
   cursor: pointer; /* Add a pointer cursor on mouse-over */
-}
+/* }  */
 
-.info {
+/* .info {
   background-color: #2169f3;
 } /* Blue */
-.info:hover {
+/* .info:hover {
   background: #0b7dda;
-}
+} */
 
-.background {
+/* .background {
   background-image: url("/images/background.jpg");
   height: 90%;
   width: 100%;
@@ -34,8 +34,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-}
-
+} */
+/* 
 .first-text {
   position: absolute;
   top: 20%;
@@ -44,11 +44,11 @@ body {
   color: white;
   margin-left: 20px;
   /* padding-right: 70%; */
-  width: 80%;
+/* width: 80%;
   font-size: bolder;
-}
+} */
 
-.features {
+/* .features {
   padding: 12px 10px 12px 0px;
   display: flex;
   margin: 0px 2px 0px 0px;
@@ -56,20 +56,21 @@ body {
 }
 .features li {
   list-style-type: none;
-}
+} */
 
-.nav-link {
+/* .nav-link {
   text-decoration: none;
   color: white;
-}
+  
+} */
 
-.rectangle {
+/* .rectangle {
   width: 500px;
   height: 100px;
   border: 1px solid white;
   background-color: white;
   margin-bottom: -50px 0px -50px;
-}
+} */
 
 .card1 {
   width: 50%;
@@ -77,8 +78,11 @@ body {
 
 .header {
   height: 90vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/images/background.jpg");
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/images/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,19 +90,19 @@ body {
 
 .header h1 {
   color: white;
-  font-size: bolder;
+  font-size: bold;
+  text-align: center;
 }
 
-.row1 {
-  width: 60%;
+.text-color{
+  color: white !important;
 }
+
 .control {
   text-align: center;
 }
 .header2 {
   text-align: center;
-}
-.card-image {
 }
 
 .item-card {
@@ -153,8 +157,4 @@ body {
   margin-top: 10px;
 }
 
-.product-holder:hover .title {
-  display: block;
-  margin-top: 150px;
-}
 
