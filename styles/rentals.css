@@ -1,0 +1,40 @@
+/* <div class="card-img-overlay"> */
+/* .hover-img {
+  background-image: url("../images/Deluxe-Bedroom-2.jpg");
+  background-position: cover;
+  z-index: 2;
+}
+
+.hover-img:hover {
+  background-color: rgba(0, 0, 0, 0.212);
+} */
+
+/* .hover-img img { 
+    width: 250px; 
+    height: 250px; 
+}  */
+  
+.hover-img { 
+    position: relative; 
+    width: 400px; 
+    height: auto; 
+} 
+  
+.overlay { 
+    position: absolute; 
+    transition: all 0.3s ease; 
+    opacity: 0; 
+    background-color: #9bcd9b; 
+} 
+  
+.hover-img:hover .overlay { 
+    opacity: 1; 
+} 
+  
+.overlayFade { 
+    /* height: 250px; 
+    width: 250px;  */
+    top: 0; 
+    left: 0; 
+    background-color: #9bcd9b67; 
+} 

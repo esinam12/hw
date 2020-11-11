@@ -79,8 +79,8 @@ body {
 .header {
   height: 90vh;
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0)
+      rgba(20, 20, 0, 0.5),
+      rgba(20, 20, 0, 0.5)
     ),
     url("/images/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg");
   background-position: center;
@@ -156,5 +156,10 @@ body {
   color: white;
   margin-top: 10px;
 }
+.nav-item{
+  
+    list-style-type: none;
+  } 
+
 
 
