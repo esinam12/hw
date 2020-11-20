@@ -8,15 +8,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/dropzone.min.css" integrity="sha512-3g+prZHHfmnvE1HBLwUnVuunaPOob7dpksI7/v6UnF/rnKGwHf/GdEq9K7iEN7qTtW+S0iivTcGpeTBqqB04wA==" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/min/dropzone.min.js" integrity="sha512-9WciDs0XP20sojTJ9E7mChDXy6pcO0qHpwbEJID1YVavz2H6QBz5eLoDD8lseZOb2yGT8xDNIV7HIe1ZbuiDWg==" crossorigin="anonymous"></script>
    
     <title>HouseHunt</title>
     
   </head>
-<style>
-    ::placeholder{
-    font-weight: bolder !important;
+ <style>
+    /* ::placeholder{
+    font-weight:  !important;
     color: black !important;
-}
+} --> */
 
 .Description:focus{
     margin-top: 15px !important;
@@ -57,10 +60,13 @@
             </li>
            
             <li class="nav-item">
-              <a class="nav-link" href="./signup.html"><img src="./images/User-profile.png" height="15px" width="15px"> Sign In</a>
+              <a class="nav-link" href="./signup.html"><img src="./images/User-profile.png" height="15px" width="15px"> Sign Up</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href=><button type="button" class="btn" style="background-color: #062fd4; color: white; margin-top: -7px;">Add Property</button></a>
+              <a class="nav-link" href="./signup.html"><img src="./images/User-profile.png" height="15px" width="15px"> Log In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./add property.html"><button type="button" class="btn" style="background-color: #062fd4; color: white; margin-top: -7px;">Add Property</button></a>
             </li>
                
             </ul>
@@ -69,7 +75,7 @@
             </nav>
 
 
-
+<!-- 
             <div class=" container-fluid  pb-5 pt-5" style="background-color:#f0f0f0;">
                 <div class="container">
                   <div class="class text-center">
@@ -78,76 +84,298 @@
                 </div>
 
         <div class="container">
-            <div class="card p-4">
-            <form>
-                <div class="form-group">
-                    <!-- <label for="formGroupExampleInput">Title</label> -->
-                    <input style="height: 100px;" type="text" class="form-control" id="disabledInput formGroupExampleInput" disabled placeholder="General">
-                  </div>
-                <div class="form-group">
-                  <!-- <label for="formGroupExampleInput">Title</label> -->
-                  <input style="height: 100px;" type="text" class="form-control Description id="formGroupExampleInput" placeholder="Title">
-                </div>
-                <div class="form-group">
-                  <!-- <label for="formGroupExampleInput2">Tagline</label> -->
-                  <input style="height: 100px;" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Tagline">
-                </div>
-                <div class="form-group">
-                    <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
-                    <textarea style="height: 200px;" type="text"  class="form-control Description" id="exampleFormControlTextarea1" rows="3" placeholder="Description" ></textarea>
-                  </div>
-              </form>
+           <div class="row">
+             <div class="col-md-6 mr-auto ml-auto">
+              <div class="card p-4">
+                <form>
+                    <div class="form-group"> -->
+                        <!-- <label for="formGroupExampleInput">Title</label> -->
+                        <!-- <input  type="text" class="form-control" id="disabledInput formGroupExampleInput" disabled placeholder="General">
+                      </div>
+                    <div class="form-group"> -->
+                      <!-- <label for="formGroupExampleInput">Title</label> -->
+                      <!-- <input  type="text" class="form-control Description id="formGroupExampleInput" placeholder="Title">
+                    </div>
+                    <div class="form-group"> -->
+                      <!-- <label for="formGroupExampleInput2">Tagline</label> -->
+                      <!-- <input  type="text" class="form-control" id="formGroupExampleInput2" placeholder="Tagline">
+                    </div>
+                    <div class="form-group"> -->
+                        <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
+                        <!-- <textarea style="height: 200px;" type="text"  class="form-control Description" id="exampleFormControlTextarea1" rows="3" placeholder="Description" ></textarea>
+                      </div>
+                  </form>
+    
+                  
+            </div>
+             </div>
+           </div>
+        </div> -->
 
-              
-        </div>
-        </div>
-
-        <div class="container">
-            <div class="card p-4 mt-5">
-            <form>
-                <div class="form-group">
-                    <!-- <label for="formGroupExampleInput">Title</label> -->
-                  <input style="height: 100px;" type="text" class="form-control" id="disabledInput formGroupExampleInput" disabled placeholder="Images">   <img src="./images/photo-camera.svg" height="30" width="30">
-                  </div>
-                <div class="form-group">
-                  <!-- <label for="formGroupExampleInput">Title</label> -->
-                  <input style="height: 100px;" type="text" class="form-control Description id="formGroupExampleInput" placeholder="Title">
-                </div>
-                <div class="form-group">
-                  <!-- <label for="formGroupExampleInput2">Tagline</label> -->
-                  <input style="height: 100px;" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Tagline">
-                </div>
-                <div class="form-group">
-                    <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
-                    <textarea style="height: 200px;" type="text"  class="form-control Description" id="exampleFormControlTextarea1" rows="3" placeholder="Description" ></textarea>
-                  </div>
-              </form>
-        </div>
-        </div>
+        <!-- <div class="container">
+            <div class="row">
+              <div class="col-md-6 mr-auto ml-auto">
+                <div class="card p-4 mt-5">
+                  <form>
+                      <div class="form-group">
+                           <label for="formGroupExampleInput">Title</label> -->
+                        <!-- <input  type="text" class="form-control" id="disabledInput formGroupExampleInput" disabled placeholder="Images">
+                        </div>
+                      <div class="form-group">
+                        <label for="formGroupExampleInput">Title</label>
+                         <input  type="text" class="form-control Description id="formGroupExampleInput" placeholder="Title">
+                      </div>
+                      <div class="form-group">
+                         <label for="formGroupExampleInput2">Tagline</label> -->
+                        <!-- <input  type="text" class="form-control" id="formGroupExampleInput2" placeholder="Tagline">
+                      </div>
+                      <div class="form-group"> --> 
+                          <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
+                          <!-- <textarea style="height: 200px;" type="text"  class="form-control Description" id="exampleFormControlTextarea1" rows="3" placeholder="Description" ></textarea>
+                        </div>
+                    </form>
+              </div>
+              </div>
+            </div>
+        </div> --> 
 
         
-        <div class="container">
-            <div class="card p-4 mt-5">
-            <form>
-                <div class="form-group">
-                    <!-- <label for="formGroupExampleInput">Title</label> -->
-                  <input style="height: 100px;" type="text" class="form-control" id="disabledInput formGroupExampleInput" disabled placeholder="Contact Information">   <img src="./images/photo-camera.svg" height="30" width="30">
+        <!-- <div class="container">
+            <div class="row">
+              <div class="col-md-6 mr-auto ml-auto">
+                <div class="card p-4 mt-5">
+                  <form>
+                      <div class="form-group"> -->
+                          <!-- <label for="formGroupExampleInput">Title</label> -->
+                        <!-- <input  type="text" class="form-control" id="disabledInput formGroupExampleInput" disabled placeholder="Contact Information">   
+                        </div>
+                      <div class="form-group"> -->
+                        <!-- <label for="formGroupExampleInput">Title</label> -->
+                        <!-- <input  type="text" class="form-control Description id="formGroupExampleInput" placeholder="Contact Email">
+                      </div>
+                      <div class="form-group"> -->
+                        <!-- <label for="formGroupExampleInput2">Tagline</label> -->
+                        <!-- <input  type="text" class="form-control" id="formGroupExampleInput2" placeholder="Phone">
+                      </div>
+      
+                  </form>
                   </div>
-                <div class="form-group">
-                  <!-- <label for="formGroupExampleInput">Title</label> -->
-                  <input style="height: 100px;" type="text" class="form-control Description id="formGroupExampleInput" placeholder="Contact Email">
-                </div>
-                <div class="form-group">
-                  <!-- <label for="formGroupExampleInput2">Tagline</label> -->
-                  <input style="height: 100px;" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Phone">
-                </div>
-
-            </form>
+              </div>
             </div>
+        </div> --> 
+
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-md-6 mr-auto ml-auto">
+          <div class="card p-4 mt-5" width="70px" >
+            <form>
+              <div class="form-group">
+                <input  type="text" class="form-control" id="disabledInput formGroupExampleInput" disabled placeholder="Rent details">
+                <div class="form-group" >
+                  <input type="text" class="form-control" id="disabledInput formGroupExampleInput"placeholder= "Category" >
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">2</label>
+                  </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+     
+    
+    
+    
+    <div class="container">
+      <div class="card mt-5 w-75" style="margin: auto;">
+        <div class="card-body">
+          <h5 class="card-title"><img src="./images/edit.svg" height="20" width="20"> General</h5>
+          <hr/>
+          <!-- <h6 class="card-subtitle mb-2 text-muted"></h6> -->
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <!-- <a href="#" class="card-link">Card link</a> -->
+          <!-- <a href="#" class="card-link">Another link</a> -->
+          <div class="form-group">
+            <label for="formGroupExampleInput">Title</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+          </div>
+          
+          <div class="form-group"><label for="formGroupExampleInput">Description</label>
+            <textarea class="form-control" id="exampleFormControlTexta
+            rea1" rows="3"></textarea>
+          </div>
+
+        </div>
+      </div>
+      <div class="card mt-5 w-75" style="margin: auto;">
+        <div class="card-body">
+          <h5 class="card-title"><img src="./images/image.svg" height="20" width="20"> Images</h5>
+          <hr/>
+          <!-- <h6 class="card-subtitle mb-2 text-muted"></h6> -->
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <!-- <a href="#" class="card-link">Card link</a> -->
+          <!-- <a href="#" class="card-link">Another link</a> -->
+          <div class="form-group">
+            <label for="formGroupExampleInput">Cover image</label>
+            <form action="/file-upload" class="dropzone">
+              <div class="fallback">
+                <input name="file" type="file" />
+              </div>
+            </form>
+          </div>
+          
+          <div class="form-group">
+            <label for="formGroupExampleInput">Gallery images</label>
+            <form action="/file-upload" class="dropzone">
+              <div class="fallback">
+                <input name="file" type="file" multiple />
+              </div>
+            </form>
+          </div>
+
         </div>
 
+      </div>
+      <div class="card mt-5 w-75" style="margin: auto;">
+        <div class="card-body">
+          <h5 class="card-title"><img src="./images/call.svg" height="20" width="20"> Contact Information <hr/></h5>
+          <!-- <h6 class="card-subtitle mb-2 text-muted"></h6> -->
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <!-- <a href="#" class="card-link">Card link</a> -->
+          <!-- <a href="#" class="card-link">Another link</a> -->
+          <div class="form-group">
+            <label for="formGroupExampleInput">Phone</label>
+            <input type="tel" class="form-control" id="formGroupExampleInput">
+          </div>
+          
+          <div class="form-group"><label for="formGroupExampleInput">Email</label>
+            <input type="email" class="form-control" id="formGroupExampleInput">
+          </div>
+
+        </div>
+      </div>
+      <div class="card mt-5 w-75" style="margin: auto;">
+        <div class="card-body">
+          <h5 class="card-title"><img src="./images/home (3).svg" height="20" width="20"> Rent Details</h5>
+          <hr/>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label  mr-5" for="inlineCheckbox1">Apartment</label>
+          </div>
+          <div class="form-check form-check-inline ml-4">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label " for="inlineCheckbox2">House</label>
+          </div>
+        <br/>
+          <div class="form-check form-check-inline mr-3">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label mr-5" for="inlineCheckbox1">Hostel</label>
+          </div>
+          <div class="form-check form-check-inline ml-5">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label mr-5" for="inlineCheckbox2">Rooms</label>
+          </div>
+          </div>
+        </div>
+          
+          <div class="card mt-5 w-75" style="margin: auto;">
+            <div class="card-body">
+              <h5 class="card-title">Amenities</h5>
+              <hr/>
+              <!-- <h6 class="card-subtitle mb-2 text-muted"></h6> -->
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <!-- <a href="#" class="card-link">Card link</a> -->
+              <!-- <a href="#" class="card-link">Another link</a> -->
+              <div class="form-group">
+                <label for="formGroupExampleInput">Area</label>
+                <input type="number" class="form-control" id="formGroupExampleInput">
+              </div>
+              
+              <div class="form-group"><label for="formGroupExampleInput">Rooms</label>
+                <input type="number" class="form-control" id="formGroupExampleInput">
+             </div>
+
+             
+             <div class="form-group"><label for="formGroupExampleInput">Bed</label>
+              <input type="number" class="form-control" id="formGroupExampleInput">
+           </div>
+
+           
+           <div class="form-group"><label for="formGroupExampleInput">Bathrooms</label>
+            <input type="number" class="form-control" id="formGroupExampleInput">
+         </div>
+            </div>
+          </div>
+
+         <div class="card mt-5 w-75" style="margin: auto;">
+          <div class="card-body">
+            <h5 class="card-title"><img src="./images/pin.svg" height="20" width="20"> Location</h5>
+            <hr/>
+            <!-- <h6 class="card-subtitle mb-2 text-muted"></h6> -->
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <!-- <a href="#" class="card-link">Card link</a> -->
+            <!-- <a href="#" class="card-link">Another link</a> -->
+            <div class="form-group">
+              <label for="formGroupExampleInput">Region</label>
+              <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+
+            <!-- <a href="#" class="card-link">Another link</a> -->
+            <div class="form-group">
+              <label for="formGroupExampleInput">Location</label>
+              <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+          </div>
+         </div>
+         
+        
+         <div class="card mt-5 w-75" style="margin: auto;">
+          <div class="card-body">
+            <h5 class="card-title"><img src="./images/ghana-cedis.svg" height="20" width="20"> Pricing</h5>
+            <hr/>
+            <!-- <h6 class="card-subtitle mb-2 text-muted"></h6> -->
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <!-- <a href="#" class="card-link">Card link</a> -->
+            <!-- <a href="#" class="card-link">Another link</a> -->
+            <div class="form-group">
+              <label for="formGroupExampleInput">Rent price(per month)</label>
+              <input type="number" class="form-control" id="formGroupExampleInput">
+            </div>
+          </div>
+         </div>
+           
+
+          <div class="container">
+            <div class="class text-center mt-5 mb-3">
+              <a class="nav-link" href=""><h6>Submit</h6></a>
+            </div>
+          </div>
+    
+    
+           
+            </div>
 
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
